@@ -43,5 +43,9 @@ Create a Simply Love RPM for OpenITG, much like I did for Stepmania 5.
 ### Misc TODO
 
 Spend the 5 minutes putting the RPMs in a new directory and running 'createrepo' for an actual yum repo
+- Eventually this repo will expand to host all sorts of user-created content. This will include (but not be limited to) themes, arrow skins, and song packs. My server has a generous amount of space and bandwidth.
+- I'll have a place where users can upload their files and specify the type, and the server will automatically pick it up, convert the .zip into an RPM, and drop it in the repo automatically. *This will be the shit.*
 
-Smoke weed everyday
+### Bucket List
+
+Online score tracking. I really want this to be a thing. Submitting the score XMLs to a server and parsing it into a database shouldn't be anything crazy. We can use something like incrond to watch the directory for changed files (new score) and send the changes to the server via a script in the background.
