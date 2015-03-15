@@ -2,7 +2,7 @@
 A custom installation of Fedora 21 geared towards arcade cabinets running Stepmania and its derivatives.
 
 ### What's in here?
-- a simple kickstart file. It is VERY bare-bones, and designed to be used with a minimal F21 bootable ISO and a single *mkisofs* command. This requires a network connection for installing packages. As the project progresses, the base packages will all be on the livecd, negating the need for internet. The process will also be documented here. If you just want the end-result, you can download a pre-built iso here: `http://teknolust.org/static/InstallTheGroove.iso`
+- a simple kickstart file. It is VERY bare-bones, and designed to be used with a minimal F21 bootable ISO and a single *mkisofs* command. This requires a network connection for installing packages. As the project progresses, the base packages will all be on the livecd, negating the need for internet. The process will also be documented here.
 
 - spec files for the source tarball of stepmania 5.0, and simply love. dguzek ported the theme.
 
@@ -24,6 +24,8 @@ wget http://dl.fedoraproject.org/pub/fedora/linux/releases/21/Server/x86_64/os/L
 cd ..
 sudo mkisofs -r -T -J -V "InstallTheGroove" -b isolinux.bin -c boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -v -o linuxboot.iso .
 ```
+
+If you just want the end-result, you can download a pre-built iso here: `http://teknolust.org/static/InstallTheGroove.iso`
 
 # The install disc will automatically format your hard drive. This is by design. You have been warned.
 
