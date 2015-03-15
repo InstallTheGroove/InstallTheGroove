@@ -42,3 +42,5 @@ And since nobody wants to play on an arcade cabinet without (sighs heavily) Simp
 `yum -y install http://teknolust.org/static/stepmania-simplylove-20150201-1.fc21.x86_64.rpm`
 
 Linux philosophy is for packages to leave existing settings in place, so you'll have to pick the theme in-game after installing. This only needs to be done once.
+
+Stepmania is installed in `/opt/stepmania-5.0`
