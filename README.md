@@ -26,7 +26,7 @@ cd ..
 sudo mkisofs -r -T -J -V "InstallTheGroove" -b isolinux.bin -c boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -v -o linuxboot.iso .
 ```
 
-If you just want the end-result, you can download a pre-built iso here: `http://teknolust.org/static/InstallTheGroove.iso`
+If you just want the end-result, you can download a pre-built iso here: `http://teknolust.org/static/InstallTheGroove.iso`. Please note the ISO still requires a wired network to install. I haven't figured out building all the packages in, and getting the kick to work with wireless. I really hope to have this resolved in the next major release.
 
 # The install disc will automatically format your hard drive. This is by design. You have been warned.
 
