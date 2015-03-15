@@ -18,6 +18,7 @@ sudo mount -o loop boot.iso ~/bootcd
 cp -pR ~/bootcd/isolinux ~/installthegroove
 cd ~/installthegroove
 wget https://raw.githubusercontent.com/sherl0k/InstallTheGroove/master/ks.cfg
+wget https://raw.githubusercontent.com/sherl0k/InstallTheGroove/master/isolinux.cfg
 mkdir image
 cd image
 wget http://dl.fedoraproject.org/pub/fedora/linux/releases/21/Server/x86_64/os/LiveOS/squashfs.img
