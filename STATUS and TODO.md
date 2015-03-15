@@ -21,6 +21,10 @@ Utilities script
 
 Test on real hardware. I have no hardware to test on. I am currently looking for volunteers to help test. I have no idea what is required for the kernel to recognize the hardware, and what is required for the games to see the exposed hardware.
 
+Auto-detect monitor and set the X11 config as such.
+
+Auto-detect the hardware in use (JPAC, PIUIO, ITGIO, Minimaid) and adjust JWA to compensate if needed.
+
 ### Stepmania 5
 
 #### Status
