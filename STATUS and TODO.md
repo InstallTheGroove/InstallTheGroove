@@ -16,6 +16,7 @@ Create a different default user, and make it auto-login.
 
 Autorun the game upon logging in.
 - This will be controlled by a bash script. If both games are installed, an accompanying script will provided to set the default.
+
 Utilities script
 - This will allow the user to do functions like recache, change themes, preferences, other lines inside INI files, via a menu-driven script. This will save the user pains of opening the files in external editors to make common adjustments.
 
