@@ -4,6 +4,8 @@ A custom installation of Fedora 21 geared towards arcade cabinets running Stepma
 ### What's in here?
 Right now, just a simple kickstart file. It is VERY bare-bones, and designed to be used with a minimal F21 bootable ISO and a single *mkisofs* command. This requires a network connection for installing packages. As the project progresses, the base packages will all be on the livecd, negating the need for internet. The process will also be documented here.
 
+You can download a pre-built iso here: `http://teknolust.org/static/InstallTheGroove.iso`
+
 ### How do I use this?
 
 You'll want some sort of a Linux environment. It doesn't need to be Fedora 21, these directions are distro-agnostic. It involves downloading the Fedora 21 Server bootable ISO, and the "stage2" squashfs.
