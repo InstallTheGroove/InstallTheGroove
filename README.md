@@ -38,7 +38,7 @@ Future releases will have a something more sane, and will auto-login (and auto-l
 
 stepmania5 can be installed with a single command:
 
-`sudo yum -y install http://teknolust.org/static/stepmania-5.0-1.fc21.x86_64.rpm`
+`sudo yum -y install http://teknolust.org/static/stepmania-5.0.6-1.fc21.x86_64.rpm`
 
 And since nobody wants to play on an arcade cabinet without (sighs heavily) Simply Love, I packaged that into an RPM also:
 
