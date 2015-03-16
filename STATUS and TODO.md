@@ -32,8 +32,12 @@ Auto-detect the hardware in use (JPAC, PIUIO, ITGIO, Minimaid) and adjust JWA to
 
 Stepmania 5 compiles and runs without issue on Fedora 21. I have built it into a binary RPM, and provided my spec file to go with it. Stepmania5 works best without pulseaudio, so InstallTheGroove doesn't use it. Support is still compiled in (for users who don't wish to use InstallTheGroove) so only the pulseaudio *libraries* are installed.
 
+Stepmania 5.0.6 will build cleanly, but building the RPM with the included spec file makes requires some detail: the command to toss *rpmbuild* is `QA_RPATHS=$[ 0x0002|0x0004 ] rpmbuild -ba stepmania-5.0.6.spec` due to the way ffmpeg is compiled into the game statically. I wish there were an easy way around this but there isn't. Future builds of stepmania will use *cmake* instead, and I'm actively working with the dev team to ensure that the RPMs can be built.
+
 #### TODO
-Build new RPM based off of latest release. Mine is probably a month out of date. With the spec file, it makes life easy.
+~~Build new RPM based off of latest release. Mine is probably a month out of date. With the spec file, it makes life easy.~~
+
+Work with Wolfman2000 to ensure *cmake* knows what to do on a `make install`
 
 ### OpenITG
 
