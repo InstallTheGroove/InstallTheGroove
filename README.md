@@ -47,3 +47,13 @@ And since nobody wants to play on an arcade cabinet without (sighs heavily) Simp
 Linux philosophy is for packages to leave existing settings in place, so you'll have to pick the theme in-game after installing. This only needs to be done once.
 
 Stepmania is installed in `/opt/stepmania-5.0`
+
+OpenITG is available, although it is probably very buggy. Because of limitations of the RPM format, it's impossible to define a list of dependencies in a spec file for a different arch than your current environment. As such, you'll have to install a bunch of stuff beforehand before attempting to run OpenITG.
+
+```
+sudo yum -y install glibc.i686 libX11.i686 libXtst.i686 mesa-libGL.i686 mesa-libGLU.i686 libpng12.i686 libjpeg-turbo.i686 libusb.i686 libXrandr.i686 mesa-dri-drivers.i686 libvorbis.i686 libogg.i686 alsa-lib.i686
+sudo yum -y install http://download1.rpmfusion.org/free/fedora/releases/21/Everything/i386/os/libmad-0.15.1b-17.fc21.i686.rpm
+sudo yum -y install http://teknolust.org/static/openitg-b2-1.fc21.x86_64.rpm
+````
+
+Please be aware this is just a 32-bit build of OpenITG running cleanly on a 64-bit box. The game still runs into the 4GB memory limit.
