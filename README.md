@@ -19,9 +19,6 @@ cp -pR ~/bootcd/isolinux ~/installthegroove
 cd ~/installthegroove/isolinux/
 wget https://raw.githubusercontent.com/sherl0k/InstallTheGroove/master/ks.cfg
 wget https://raw.githubusercontent.com/sherl0k/InstallTheGroove/master/isolinux.cfg
-mkdir image
-cd image
-cd ..
 sudo mkisofs -r -T -J -V "InstallTheGroove" -b isolinux.bin -c boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -v -o linuxboot.iso .
 ```
 
