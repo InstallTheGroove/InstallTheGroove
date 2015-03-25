@@ -19,6 +19,7 @@ BuildRequires: binutils
 BuildRequires: bzip2-devel
 BuildRequires: bzip2-libs
 BuildRequires: cairo-devel
+BuildRequires: cmake
 BuildRequires: coreutils
 BuildRequires: cpio
 BuildRequires: diffutils
