@@ -6,13 +6,13 @@ The operating system is Fedora 21. The choice of this OS is that it is a modern 
 
 The "Server" edition is used solely because it installs the smallest amount of packages. We want only the essentials, and nothing more. The user is always able to install more via yum.
 
-Blackbox is chosen as the default window manager due to how lightweight it is, while still giving the user basic functions. A right-click of the desktop will give you access to a few basic apps. This menu will eventually be customized to tailor to dance game cabinets, instead of its defaults.
+Fluxbox is chosen as the default window manager due to how lightweight it is, while still giving the user basic functions. A right-click of the desktop will give you access to a few basic apps. Adding menu items has been scripted into the kickstart, launching Stepmania 5, OpenITG, and other utilities.
 
 Pulseaudio is specifically removed from this distribution because it hampers the games. It introduces audio lag, and OpenITG will flat out not output audio with it installed. The audio is piped directly from the hardware out to ALSA, right to your speakers.
 
 #### TODO
 
-Create a different default user, and make it auto-login.
+Create a different default user, ~~and make it auto-login.~~
 
 Autorun the game upon logging in.
 - This will be controlled by a bash script. If both games are installed, an accompanying script will provided to set the default.
@@ -37,7 +37,7 @@ Stepmania 5.0.6 will build cleanly, but building the RPM with the included spec 
 #### TODO
 ~~Build new RPM based off of latest release. Mine is probably a month out of date. With the spec file, it makes life easy.~~
 
-Work with Wolfman2000 to ensure *cmake* knows what to do on a `make install`
+~~Work with Wolfman2000 to ensure *cmake* knows what to do on a `make install`~~
 
 ### OpenITG
 
@@ -45,7 +45,7 @@ Work with Wolfman2000 to ensure *cmake* knows what to do on a `make install`
 I took a binary build of OpenITG R2 and dropped it on my 64-bit Fedora21 VM, and kept installing the required 32-bit libraries until OpenITG would successfully run. As such, it's not really a F21-based build, but it still runs.
 
 #### TODO
-I have to track back through my yum install history to get all the 32-bit libraries I installed to get oITG running. From there, I can build a spec file and get an RPM of this sucker out there.
+~~I have to track back through my yum install history to get all the 32-bit libraries I installed to get oITG running. From there, I can build a spec file and get an RPM of this sucker out there.~~
 
 Create a Simply Love RPM for OpenITG, much like I did for Stepmania 5.
 
