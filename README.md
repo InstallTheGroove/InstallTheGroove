@@ -29,13 +29,20 @@ If you just want the end-result, you can download a pre-built iso here: `http://
 
 ### OK I have it installed, now what?
 
-If you are unsure how to log in, The username is *fedora* and the password is *Asdfqwerty*
+The system auto-logins to a fluxbox session.
+The username is *fedora* and the password is *Asdfqwerty*
 
-Future releases will have a something more sane, and will auto-login (and auto-launch the game).
+Future releases will have a something more sane, and auto-launch a game.
 
+Right-click anywhere on the desktop to bring up the menu. *Liliterm* is the terminal emulator, and *Leafpad* is a text editor. You can also launch OpenITG and Stepmania 5 directly from here. Firefox is included.
+
+
+### How do I install just the games on my own Fedora 21 install?
 stepmania5 can be installed with a single command:
 
 `sudo yum -y install http://teknolust.org/static/stepmania-5.0.6-1.fc21.x86_64.rpm`
+
+You'll need the `libmad` libraries, which can be obtained via the rpmfusion repos.
 
 And since nobody wants to play on an arcade cabinet without (sighs heavily) Simply Love, I packaged that into an RPM also:
 
@@ -54,3 +61,5 @@ sudo yum -y install http://teknolust.org/static/openitg-b2-1.fc21.x86_64.rpm
 ````
 
 Please be aware this is just a 32-bit build of OpenITG running cleanly on a 64-bit box. The game still runs into the 4GB memory limit.
+
+The game is installed in `/opt/openitg` and will for some reason create a `C:` directory and a massive collection of Windows-based subdirectories in whatever directory you run the game out of.
