@@ -47,6 +47,7 @@ BuildRequires: libstdc++-devel
 BuildRequires: libvorbis-devel
 BuildRequires: m4
 BuildRequires: make
+BuildRequires: mesa-libEGL-devel
 BuildRequires: mesa-libGL-devel
 BuildRequires: mesa-libGLU-devel
 BuildRequires: nasm
