@@ -21,6 +21,8 @@ An open-source rhythm dancing game based on StepMania 3.95
 %install
 mkdir -p $RPM_BUILD_ROOT/opt/openitg/
 cp -pR . $RPM_BUILD_ROOT/opt/openitg/
+chmod u+s $RPM_BUILD_ROOT/opt/openitg/openitg-sse2-beta-2
+chmod u+s $RPM_BUILD_ROOT/opt/openitg/openitg-beta-2
 
 %clean
 
