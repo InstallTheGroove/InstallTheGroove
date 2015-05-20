@@ -25,6 +25,8 @@ sudo mkisofs -r -T -J -V "InstallTheGroove" -b isolinux.bin -c boot.cat -no-emul
 
 If you just want the end-result, you can download a pre-built iso here: `http://teknolust.org/static/InstallTheGroove.iso`. Please note the ISO still requires a wired network to install. I haven't figured out building all the packages in, and getting the kick to work with wireless. I really hope to have this resolved in the next major release.
 
+Thanks to NekoDan, we've found that using [UNetbootin](http://unetbootin.sourceforge.net) is the preferred method to create a USB installer. Other tools have not been tested, YMMV.
+
 # The install disc will automatically format your hard drive. This is by design. You have been warned.
 
 ### OK I have it installed, now what?
