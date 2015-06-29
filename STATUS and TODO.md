@@ -12,7 +12,7 @@ Pulseaudio is specifically removed from this distribution because it hampers the
 
 #### TODO
 
-Create a different default user, ~~and make it auto-login.~~
+~~Create a different default user, and make it auto-login.~~
 
 Autorun the game upon logging in.
 - This will be controlled by a bash script. If both games are installed, an accompanying script will provided to set the default.
