@@ -8,7 +8,7 @@ A custom installation of Fedora 21 geared towards arcade cabinets running Stepma
 
 ### How do I use this?
 
-Download a pre-built iso here: `http://teknolust.org/static/InstallTheGroove.iso`. No network connection is required. It will automatically install the base operating system, OpenITG, and Stepmania 5.
+Download a pre-built iso here: `http://sherl0k.bemaniso.ws/InstallTheGroove.iso`. No network connection is required. It will automatically install the base operating system, OpenITG, and Stepmania 5.
 
 # The install disc will automatically format your hard drive. This is by design. You have been warned.
 
