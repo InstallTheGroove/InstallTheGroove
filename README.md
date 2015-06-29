@@ -19,7 +19,7 @@ The username is *itg* and the password is *changeme*
 
 Right-click anywhere on the desktop to bring up the menu. *Lilyterm* is the terminal emulator, and *Leafpad* is a text editor. You can also launch OpenITG and Stepmania 5 directly from here. Firefox is included.
 
-#### How do I install the PIU driver?
+#### How do I install the PIUIO driver?
 Open a `lilyterm` session and punch in the following:
 
 ```
