@@ -2,40 +2,36 @@
 A custom installation of Fedora 21 geared towards arcade cabinets running Stepmania and its derivatives.
 
 ### What's in here?
-- a simple kickstart file. It is VERY bare-bones, and designed to be used with a minimal F21 bootable ISO and a single *mkisofs* command. This requires a network connection for installing packages. As the project progresses, the base packages will all be on the livecd, negating the need for internet. The process will also be documented here.
+- a simple kickstart file. It is VERY bare-bones, and is what i use for the pre-built ISO.
 
 - spec files for the source tarball of stepmania 5.0, and simply love. dguzek ported the theme.
 
 ### How do I use this?
 
-You'll want some sort of a Linux environment. It doesn't need to be Fedora 21, these directions are distro-agnostic. It involves downloading the Fedora 21 Server bootable ISO, and the "stage2" squashfs.
-
-```
-mkdir ~/bootcd
-mkdir ~/installthegroove
-wget http://dl.fedoraproject.org/pub/fedora/linux/releases/21/Server/x86_64/os/images/boot.iso
-sudo mount -o loop boot.iso ~/bootcd
-cp -pR ~/bootcd/isolinux ~/installthegroove
-cd ~/installthegroove/isolinux/
-rm -f isolinux.cfg
-wget https://raw.githubusercontent.com/sherl0k/InstallTheGroove/master/ks.cfg
-wget https://raw.githubusercontent.com/sherl0k/InstallTheGroove/master/isolinux.cfg
-sudo mkisofs -r -T -J -V "InstallTheGroove" -b isolinux.bin -c boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -v -o linuxboot.iso .
-```
-
-If you just want the end-result, you can download a pre-built iso here: `http://teknolust.org/static/InstallTheGroove.iso`. Please note the ISO still requires a wired network to install. I haven't figured out building all the packages in, and getting the kick to work with wireless. I really hope to have this resolved in the next major release.
+Download a pre-built iso here: `http://teknolust.org/static/InstallTheGroove.iso`. No network connection is required. It will automatically install the base operating system, OpenITG, and Stepmania 5.
 
 # The install disc will automatically format your hard drive. This is by design. You have been warned.
 
 ### OK I have it installed, now what?
 
 The system auto-logins to a fluxbox session.
-The username is *fedora* and the password is *Asdfqwerty*
+The username is *itg* and the password is *changeme*
 
-Future releases will have a something more sane, and auto-launch a game.
+Right-click anywhere on the desktop to bring up the menu. *Lilyterm* is the terminal emulator, and *Leafpad* is a text editor. You can also launch OpenITG and Stepmania 5 directly from here. Firefox is included.
 
-Right-click anywhere on the desktop to bring up the menu. *Liliterm* is the terminal emulator, and *Leafpad* is a text editor. You can also launch OpenITG and Stepmania 5 directly from here. Firefox is included.
+#### How do I install the PIU driver?
+Open a `lilyterm` session and punch in the following:
 
+```
+cd utils
+sudo piu.sh
+```
+
+it will ask for your password, which if not changed from the default, is `changeme`
+
+#### How do I change the password?
+
+I'm glad you asked! Just enter `passwd` on the command prompt and follow the instructions.
 
 ### How do I install just the games on my own Fedora 21 install?
 stepmania5 can be installed with a single command:
