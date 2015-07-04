@@ -24,7 +24,7 @@ Open a `lilyterm` session and punch in the following:
 
 ```
 cd utils
-sudo piu.sh
+sudo ./piu.sh
 ```
 
 it will ask for your password, which if not changed from the default, is `changeme`
