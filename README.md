@@ -8,7 +8,7 @@ A custom installation of Fedora 21 geared towards arcade cabinets running Stepma
 
 ### How do I use this?
 
-Download a pre-built iso here: `http://sherl0k.bemaniso.ws/InstallTheGroove.iso`. No network connection is required. It will automatically install the base operating system, OpenITG, and Stepmania 5.
+There are two pre-built ISOs I've generated: [a 64-bit ISO](http://sherl0k.bemaniso.ws/InstallTheGroove.iso) for modern, home-built PCs, and [a 32-bit ISO](http://sherl0k.bemaniso.ws/InstallTheGroove-i686.iso) for the original BoXoR hardware. The 32-bit ISO can theoretically work on all hardware, but using the 64-bit flavor is recommended when possible.
 
 # The install disc will automatically format your hard drive. This is by design. You have been warned.
 
@@ -48,14 +48,21 @@ Linux philosophy is for packages to leave existing settings in place, so you'll 
 
 Stepmania is installed in `/opt/stepmania-5.0`
 
-OpenITG is available, although it is probably very buggy. Because of limitations of the RPM format, it's impossible to define a list of dependencies in a spec file for a different arch than your current environment. As such, you'll have to install a bunch of stuff beforehand before attempting to run OpenITG.
+OpenITG is available. As far as I can tell, it works "as designed" with all of its known buggy behaviour included. If you're on a 64-bit distro, you'll have to manually install a bunch of 32-bit libraries to get the game to run.
 
 ```
 sudo yum -y install glibc.i686 libX11.i686 libXtst.i686 mesa-libGL.i686 mesa-libGLU.i686 libpng12.i686 libjpeg-turbo.i686 libusb.i686 libXrandr.i686 mesa-dri-drivers.i686 libvorbis.i686 libogg.i686 alsa-lib.i686
 sudo yum -y install http://download1.rpmfusion.org/free/fedora/releases/21/Everything/i386/os/libmad-0.15.1b-17.fc21.i686.rpm
 sudo yum -y install http://teknolust.org/static/openitg-b2-1.fc21.x86_64.rpm
-````
+```
 
 Please be aware this is just a 32-bit build of OpenITG running cleanly on a 64-bit box. The game still runs into the 4GB memory limit.
 
-The game is installed in `/opt/openitg` and will for some reason create a `C:` directory and a massive collection of Windows-based subdirectories in whatever directory you run the game out of.
+On a 32-bit OS, it's much simpler:
+
+```
+sudo yum -y install http://download1.rpmfusion.org/free/fedora/releases/21/Everything/i386/os/libmad-0.15.1b-17.fc21.i686.rpm
+sudo yum -y install http://teknolust.org/static/openitg-b2-1.fc21.i686.rpm
+```
+
+The game is installed in `/opt/openitg`.
