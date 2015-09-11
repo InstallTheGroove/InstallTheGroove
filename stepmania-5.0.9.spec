@@ -1,12 +1,12 @@
 Name:		stepmania
-Version:	5.0.6
+Version:	5.0.9
 Release:	1%{?dist}
 Summary:	this is a game where you use your feet
 
 Group:		Stepmania
 License:	GPL2
 URL:		http://www.stepmania.com
-Source0:	stepmania-5.0.6.tar.gz
+Source0:	stepmania-5.0.9.tar.gz
 AutoReq:	0
 
 
