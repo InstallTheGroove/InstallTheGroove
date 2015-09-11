@@ -36,7 +36,7 @@ I'm glad you asked! Just enter `passwd` on the command prompt and follow the ins
 ### How do I install just the games on my own Fedora 21 install?
 stepmania5 can be installed with a single command:
 
-`sudo yum -y install http://teknolust.org/static/stepmania-5.0.6-1.fc21.x86_64.rpm`
+`sudo yum -y install http://teknolust.org/static/stepmania-5.0.9-1.fc21.x86_64.rpm`
 
 You'll need the `libmad` libraries, which can be obtained via the rpmfusion repos.
 
