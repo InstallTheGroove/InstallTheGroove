@@ -8,7 +8,7 @@ A custom installation of Fedora 21 geared towards arcade cabinets running Stepma
 
 ### How do I use this?
 
-There are two pre-built ISOs I've generated: [a 64-bit ISO](http://sherl0k.bemaniso.ws/InstallTheGroove.iso) for modern, home-built PCs, and [a 32-bit ISO](http://sherl0k.bemaniso.ws/InstallTheGroove-i686.iso) which should work in an MK6 or a BoXoR. The 32-bit ISO can theoretically work on all hardware, but using the 64-bit flavor is recommended when possible.
+There are two pre-built ISOs I've generated: [a 64-bit ISO](http://bit.ly/2041TL7) for modern, home-built PCs, and [a 32-bit ISO](http://bit.ly/1MPUYve) which should work in an MK6 or a BoXoR. The 32-bit ISO can theoretically work on all hardware, but using the 64-bit flavor is recommended when possible.
 
 # The install disc will automatically format your hard drive. This is by design. You have been warned.
 
